@@ -1,4 +1,4 @@
-package br.com.alura;
+package br.com.alura.lista;
 
 import javax.jms.*;
 import javax.naming.InitialContext;
