@@ -19,10 +19,21 @@ public class TesteConsumidor {
         Destination queue = (Destination) context.lookup("financeiro");
         MessageConsumer consumer = session.createConsumer(queue);
 
-        Message message = consumer.receive();
+       consumer.setMessageListener(new MessageListener() {
+           public void onMessage(Message message) {
 
-        System.out.println("Recebendo mensagem: " + message);
-        new Scanner(System.in).nextLine(); //parar o programa para testar a conexao
+               TextMessage textMessage = (TextMessage) message;
+
+               try {
+                   System.out.println(textMessage.getText());
+               } catch (JMSException e) {
+                   System.out.println(e.getMessage());
+               }
+
+           }
+       });
+
+       new Scanner(System.in).nextLine();
 
 
         connection.close();
