@@ -1,10 +1,10 @@
-package br.com.alura.lista;
+package br.com.alura.jms.lista;
 
 import javax.jms.*;
 import javax.naming.InitialContext;
 import java.util.Scanner;
 
-public class TesteConsumidor {
+public class ConsumidorLista {
 
     public static void main(String[] args) throws Exception {
 
