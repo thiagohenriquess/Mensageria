@@ -19,8 +19,7 @@ Cada parceiro deverá enviar no Header de todas as requisições um parâmetro &
 | **Content-Type** | application/json |
 | **Cache-Control** | no-cache |
 | **URL** | /calendar |
-| **Body** | {  &quot;beginDate&quot;: &quot;2018-03-10&quot;,   
-                &quot;endDate&quot;: &quot;2018-03-11&quot;,   
+| **Body** | {  &quot;beginDate&quot;: &quot;2018-03-10&quot;,&quot;endDate&quot;: &quot;2018-03-11&quot;,   
                 &quot;beginWindow&quot;: &quot;08:00&quot;,  
                 &quot;endWindow&quot;: &quot;13:00&quot;, 
                 &quot;service&quot;: &quot;adesao-wooza-stg&quot;} |
